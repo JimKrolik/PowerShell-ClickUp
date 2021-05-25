@@ -52,6 +52,7 @@ Param(
 
 $authorizationKey = ""
 $teamID = ""
+$flagDirectoryBase = "C:\Windows\Temp"
 $flagDirectory = "C:\Windows\Temp\Flags"
 
 <#######################
@@ -69,10 +70,10 @@ $UpdateStatus = $PSScriptRoot+"\ClickUp-UpdateStatus.ps1"
       Program Begin
 ########################>
 
-#If the flag directory doesn't exist, exit as there is nothing to check against.
+#If the flag directory doesn't exist, create it.
 if ((Test-Path -Path $flagDirectory) -eq $false) {
 
-    Exit 0
+    New-Item -ItemType "Directory" -Name "Flags" -Path $flagDirectoryBase
 
 }
 
