@@ -8,7 +8,7 @@
 	 Filename:     	ClickUp-CreateTicket.ps1
 	===========================================================================
 	.DESCRIPTION
-		This script is part of a collection of scripts meant to interact with ClickUp via ConnectWise Automate.
+		This script is part of a collection of scripts meant to interact with ClickUp via PowerShell.
         This script is intended to create a ticket and assign a tag for easier viewing.  
         
         As part of its functionality, it will create a flag file that will be referenced by the ClickUp-UpdateStatus.ps1 script.
