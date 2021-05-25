@@ -7,7 +7,7 @@
 	 Filename:     	ClickUp-UpdateStatus.ps1
 	===========================================================================
 	.DESCRIPTION
-		This script is part of a collection of scripts meant to interact with ClickUp via ConnectWise Automate.
+		This script is part of a collection of scripts meant to interact with ClickUp via PowerShell.
         This script is intended to update the status of an existing ticket and currently supports 'Open', 'Pending', 'New', and 'Complete' Statuses.
         Additionally, the script can accept a parameter to use Custom ticket (xx-xxxxxx) identifier by passing in -customID with $true.
 
