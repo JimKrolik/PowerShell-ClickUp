@@ -135,7 +135,7 @@ ForEach ($disk in $allFixedDisks) {
 
                 if ((Test-Path -Path "$flagDirectory\lowDisk$driveLetter.flag") -eq $true) {
 
-                 #If the flag already exists, skip ticket creation..
+                 #If the flag already exists, skip ticket creation.
                  continue
 
                 }

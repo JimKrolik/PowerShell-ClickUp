@@ -2,7 +2,7 @@
 	.NOTES
 	===========================================================================
 	 Created on:   	05/25/2021
-	 Updated on:	05/25/2021
+	 Updated on:	05/27/2021
 	 Created by:   	James Krolik
 	 Filename:     	ClickUp-UpdateStatus.ps1
 	===========================================================================
@@ -12,8 +12,8 @@
         Additionally, the script can accept a parameter to use Custom ticket (xx-xxxxxx) identifier by passing in -customID with $true.
 
     .USAGE
-        ClickUp-UpdateStatus.ps1 -taskID "JT-12345" -newStatus "Complete"
-        ClickUp-UpdateStatus.ps1 -taskID "a1b2c3d" -newStatus "New" -customID $false
+        ClickUp-UpdateStatus.ps1 -taskID ""a1b2c3d"" -newStatus "Complete"
+        ClickUp-UpdateStatus.ps1 -taskID "JT-12345" -newStatus "New" -customID $true
 
 
     .ADDITIONAL NOTES
