@@ -100,10 +100,8 @@ ForEach ($disk in $allFixedDisks) {
         $freeSpaceInGB = [math]::round(($disk.freespace / 1GB),2)
         $percentageFree = [int](($disk.freespace / $disk.size) * 100)
        
-        $minimumGBTarget = ($minimumGBTarget * 1024 * 1024 * 1024)
-
         #If we encounter a disk that is under the minimum size to check for, such as the System partition, just skip it entirely.
-        if ($disk.size -le $minimumGBTarget) {
+        if (($disk.size/1GB) -le $minimumGBTarget) {
             continue
         }
 
